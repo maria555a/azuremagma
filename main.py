@@ -8,3 +8,5 @@ print(thousands)
 print(hundreds)
 print(tens)
 print(ones)
+
+
