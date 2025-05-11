@@ -5,7 +5,7 @@ if len(lst) == 0:
 
 
 lst = [9, 6, 3, 9, 8, 9, 6, 9]
-part = len(lst) // 2
+part = (len(lst) + 4) // 2
 lst1 = lst[:part]
 lst2 = lst[part:]
 result = [lst1, lst2]
