@@ -3,14 +3,14 @@ import keyword
 
 name = input("Type variable name: ")
 
-value = True
+is_variable_name_valid = True
 
 if not name:
-    value = False
+    is_variable_name_valid = False
 elif name in keyword.kwlist:
-    value = False
+    is_variable_name_valid = False
 elif name[0].isdigit():
-    value = False
+    is_variable_name_valid = False
 elif name.count('_') > 1:
     value = False
 
@@ -18,15 +18,15 @@ elif name.count('_') > 1:
 else:
     for sign in name:
         if sign.isupper():
-            value = False
+            is_variable_name_valid = False
             break
         if sign in string.whitespace:
-            value = False
+            is_variable_name_valid = False
             break
         if sign in string.punctuation and sign != '_':
-            value = False
+            is_variable_name_valid = False
             break
-print(value)
+print(is_variable_name_valid)
 
 
 
