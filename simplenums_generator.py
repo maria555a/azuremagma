@@ -11,4 +11,4 @@ def prime_generator(end):
         if is_prime(num):
             yield num
 
-print("Прості числа до 10 включно:", list(prime_generator(15)))
+print(list(prime_generator(15)))
